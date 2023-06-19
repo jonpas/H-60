@@ -1,0 +1,40 @@
+name = "Hatchet H-60"
+prefix = "vtx"
+author = "Yax"
+mainprefix = "z"
+
+[files]
+include = [
+    "mod.cpp",
+    "README.md",
+    "LICENSE",
+    "logo_vtx_ca.paa",
+    "logo_vtx_small_ca.paa",
+    "meta.cpp",
+]
+
+[version]
+git_hash = 0
+
+[asc]
+enabled = true
+exclude = [
+  "/initsettings.sqf",
+  "/initkeybinds.sqf",
+  "/xeh_prep.sqf",
+]
+
+[hemtt.config]
+preset = "Hemtt"
+
+[hemtt.launch]
+workshop = [
+  "450814997", # CBA_A3's Workshop ID
+  "463939057", # ACE's Workshop ID
+  "2941986336", # Hatchet Framework - Stable Version
+]
+
+[lint.sqf]
+exclude = [
+  "addons/uh60_missions/VTX_GroundSupport01.Altis/description.ext",
+]

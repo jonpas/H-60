@@ -1,15 +1,22 @@
-*.bak
 *.zip
+*.bak
 *.cache
-release/*
-releases/*
 keys/*
-.hemtt/local
 *.pbo
 texHeaders.bin
 *.swp
 *.swo
 *.biprivatekey
-build/
 Thumbs.db
+
+## HEMTT
+releases/*
+hemtt
+hemtt.exe
+.hemttout
+####
+
+## SCONS
+release
 .sconsign.dblite
+####
