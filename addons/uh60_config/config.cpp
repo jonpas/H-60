@@ -15,4 +15,4 @@ class CfgPatches {
 
 #include "CfgEventHandlers.hpp"
 
-#include "config\CfgVehicles.hpp"
+#include "config\cfgVehicles.hpp"

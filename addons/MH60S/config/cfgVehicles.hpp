@@ -21,7 +21,7 @@ class CfgVehicles {
         };
     }; // Helicopter_Base_H
     class vtx_H60_base: Heli_Transport_01_base_F {
-        #include "\z\vtx\addons\UH60\config\CfgAnimationSourcesInherit.hpp"
+        #include "\z\vtx\addons\uh60\config\CfgAnimationSourcesInherit.hpp"
         class vtx_templateFLIR;
         class Components;
         class Turrets: Turrets
@@ -48,13 +48,13 @@ class CfgVehicles {
         {
             class CopilotTurret: CopilotTurret {};
             #include "doorguns_pylons.hpp"
-            #include "GAU21L.hpp"
+            #include "gau21L.hpp"
             #include "cargoTurretsGAU21L.hpp"
         };
         class Components: Components {
           #include "Pylons.hpp"
-          #include "\z\vtx\addons\MH60M\config\sensors.hpp"
-          #include "\z\vtx\addons\MH60M\config\missileCam.hpp"
+          #include "\z\vtx\addons\mh60m\config\sensors.hpp"
+          #include "\z\vtx\addons\mh60m\config\missileCam.hpp"
         }; // Components
         class AnimationSources: AnimationSources {
           ANIM_INIT(CabinSeats_1_Hide,1);
@@ -79,7 +79,7 @@ class CfgVehicles {
           "", // "left_num_2",
           "", // "right_num_1",
           "", // "right_num_2",
-          "z\vtx\addons\UH60\Data\HH60\Fuel_probe_co.paa"
+          "z\vtx\addons\uh60\Data\HH60\Fuel_probe_co.paa"
         };
     }; // vtx_MH60S_Pylons_GAU21L
     class vtx_MH60S_GAU21L: vtx_H60_base {
@@ -133,12 +133,12 @@ class CfgVehicles {
         {
             class CopilotTurret: CopilotTurret {};
             #include "doorguns_pylons.hpp"
-            #include "\z\vtx\addons\UH60\config\turrets\cargoTurrets.hpp"
+            #include "\z\vtx\addons\uh60\config\turrets\cargoTurrets.hpp"
         };
         class Components: Components {
           #include "Pylons.hpp"
-          #include "\z\vtx\addons\MH60M\config\sensors.hpp"
-          #include "\z\vtx\addons\MH60M\config\missileCam.hpp"
+          #include "\z\vtx\addons\mh60m\config\sensors.hpp"
+          #include "\z\vtx\addons\mh60m\config\missileCam.hpp"
         }; // Components
         class AnimationSources: AnimationSources {
           ANIM_INIT(CabinSeats_1_Hide,1);

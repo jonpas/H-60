@@ -33,8 +33,3 @@ workshop = [
   "463939057", # ACE's Workshop ID
   "2941986336", # Hatchet Framework - Stable Version
 ]
-
-[lint.sqf]
-exclude = [
-  "addons/uh60_missions/VTX_GroundSupport01.Altis/description.ext",
-]

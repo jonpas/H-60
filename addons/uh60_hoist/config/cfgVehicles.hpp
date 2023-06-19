@@ -121,9 +121,9 @@ class CfgVehicles
         cost = 0;
         displayName = "Rescue Hoist Hook";
         fuelCapacity = 0;
-        hasDriver = false;
-        hasGunner = false;
-        hasCommander = false;
+        hasDriver = 0;
+        hasGunner = 0;
+        hasCommander = 0;
         /*
         class HitPoints: HitPoints {
             class HitBody: HitBody {
