@@ -1,1 +1,4 @@
-preprocess = false
+[preprocess]
+exclude = [
+  "**/description.ext",
+]

@@ -34,7 +34,7 @@ class CfgVehicles
         class Sounds;
         class HitPoints;
         class UserActions;
-        
+
     };
 
     class vtx_H60_base: Heli_Transport_01_base_F
@@ -48,7 +48,7 @@ class CfgVehicles
         // model = "\z\vtx\addons\UH60\vtx_UH60.p3d";
 
         #include "cfgUVAnimations.hpp"
-        #include "CfgUserActions.hpp"
+        #include "cfgUserActions.hpp"
         #include "edenAttributes.hpp"
         author = "Project Hatchet Studio";
         class VTX_H60_HDTS_Copilot;

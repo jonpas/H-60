@@ -4,7 +4,7 @@ class AnimationSources: AnimationSources {
     source="user";
     animPeriod=1;
     initPhase=0;
-    mass = -MASS_GUNNERSEATS;
+    mass = QUOTE(-MASS_GUNNERSEATS);
     onPhaseChanged = "params ['_vehicle', '_phase']; {_vehicle lockTurret [_x, _phase == 1]} forEach [[1], [2]] ;";
   };
   class CabinSeats_Hide {
@@ -12,7 +12,7 @@ class AnimationSources: AnimationSources {
     source="user";
     animPeriod=1;
     initPhase=0;
-    mass = -MASS_CABINSEATS;
+    mass = QUOTE(-MASS_CABINSEATS);
     lockCargoAnimationPhase = 1;
     //lockCargo[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
     // if forceAnimatePhase is equal to the phase of this animation sources, every sources from forceAnimate will be changed with their given phase
@@ -28,7 +28,7 @@ class AnimationSources: AnimationSources {
     source="user";
     animPeriod=1;
     initPhase=0;
-    mass = -MASS_CABINSEATS3;
+    mass = QUOTE(-MASS_CABINSEATS3);
     //lockCargoAnimationPhase = 1;
     //lockCargo[] = { 8, 9, 10 };
   };
@@ -36,7 +36,7 @@ class AnimationSources: AnimationSources {
     source="user";
     animPeriod=1;
     initPhase=0;
-    mass = -MASS_CABINSEATS4;
+    mass = QUOTE(-MASS_CABINSEATS4);
     //lockCargoAnimationPhase = 1;
     //lockCargo[] = { 4, 5, 6, 7 };
     forceAnimatePhase = 0;
@@ -49,7 +49,7 @@ class AnimationSources: AnimationSources {
     source="user";
     animPeriod=1;
     initPhase=0;
-    mass = -MASS_CABINSEATS4;
+    mass = QUOTE(-MASS_CABINSEATS4);
     //lockCargoAnimationPhase = 1;
     //lockCargo[] = { 0, 1, 2, 3 };
     forceAnimatePhase = 0;
@@ -63,7 +63,7 @@ class AnimationSources: AnimationSources {
     source="user";
     animPeriod=1;
     initPhase=0;
-    mass = -MASS_GUNMOUNT;
+    mass = QUOTE(-MASS_GUNMOUNT);
     forceAnimatePhase = 1;
     forceAnimate[] = { "Minigun_L_hide", 1 };
   };
@@ -71,7 +71,7 @@ class AnimationSources: AnimationSources {
     source="user";
     animPeriod=1;
     initPhase=0;
-    mass = -MASS_GUNMOUNT;
+    mass = QUOTE(-MASS_GUNMOUNT);
     forceAnimatePhase = 1;
     forceAnimate[] = { "Minigun_R_hide", 1 };
   };
@@ -79,13 +79,13 @@ class AnimationSources: AnimationSources {
     source="user";
     animPeriod=1;
     initPhase=0;
-    mass = -MASS_MINIGUN;
+    mass = QUOTE(-MASS_MINIGUN);
   };
   class Minigun_R_hide {
     source="user";
     animPeriod=1;
     initPhase=0;
-    mass = -MASS_MINIGUN;
+    mass = QUOTE(-MASS_MINIGUN);
   };
   class Minigun_Sight_L_hide {
     displayName = "Hide Minigun Sight (L)";
@@ -104,14 +104,14 @@ class AnimationSources: AnimationSources {
     source="user";
     animPeriod=1;
     initPhase=1;
-    mass = -MASS_RADAR;
+    mass = QUOTE(-MASS_RADAR);
   };
   class FLIR_HIDE {
     displayName = "Hide FLIR";
     source="user";
     animPeriod=1;
     initPhase=1;
-    mass = -MASS_FLIR;
+    mass = QUOTE(-MASS_FLIR);
   };
   class FLIR_DIRECTION {
     source="user";
@@ -138,7 +138,7 @@ class AnimationSources: AnimationSources {
     source="user";
     animPeriod=1;
     initPhase=0;
-    mass = MASS_ERFS;
+    mass = QUOTE(MASS_ERFS);
     forceAnimatePhase = 1;
     forceAnimate[] = {
       "CabinSeats_Hide", 1,
@@ -151,7 +151,7 @@ class AnimationSources: AnimationSources {
     source="user";
     animPeriod=1;
     initPhase=0;
-    //mass = MASS_MAWS; // only adjusts position
+    //mass = QUOTE(MASS_MAWS); // only adjusts position
     onPhaseChanged = "params ['_vehicle', '_phase']; _vehicle animate ['MAWS_Stubs_hide', _phase, true];";
   };
   class LASS_show {
@@ -159,7 +159,7 @@ class AnimationSources: AnimationSources {
     source="user";
     animPeriod=1;
     initPhase=0;
-    mass = MASS_LASS;
+    mass = QUOTE(MASS_LASS);
     forceAnimatePhase = 1;
     forceAnimate[] = {
       "ESSS", 0,
@@ -171,7 +171,7 @@ class AnimationSources: AnimationSources {
     source="user";
     animPeriod=1;
     initPhase=0;
-    mass = MASS_LASS;
+    mass = QUOTE(MASS_LASS);
     forceAnimatePhase = 1;
     forceAnimate[] = {
       "ESSS", 0,
@@ -183,7 +183,7 @@ class AnimationSources: AnimationSources {
     source="user";
     animPeriod=1;
     initPhase=0;
-    mass = MASS_ESSS;
+    mass = QUOTE(MASS_ESSS);
     forceAnimatePhase = 1;
     forceAnimate[] = {
       "EGMS", 0,
@@ -195,7 +195,7 @@ class AnimationSources: AnimationSources {
     source="user";
     animPeriod=1;
     initPhase=0;
-    mass = MASS_EGMS;
+    mass = QUOTE(MASS_EGMS);
     forceAnimatePhase = 1;
     forceAnimate[] = {
       "ESSS", 0,
@@ -206,7 +206,7 @@ class AnimationSources: AnimationSources {
     source="user";
     animPeriod=1;
     initPhase=1;
-    mass = -MASS_GAU21;
+    mass = QUOTE(-MASS_GAU21);
     forceAnimatePhase = 0;
     forceAnimate[] = {
       "CabinSeats_Hide", 1,
@@ -217,7 +217,7 @@ class AnimationSources: AnimationSources {
     source="user";
     animPeriod=1;
     initPhase=1;
-    mass = -MASS_GAU21;
+    mass = QUOTE(-MASS_GAU21);
     forceAnimatePhase = 0;
     forceAnimate[] = {
       "CabinSeats_Hide", 1,
@@ -229,14 +229,14 @@ class AnimationSources: AnimationSources {
     source="user";
     animPeriod=1;
     initPhase=0;
-    mass = MASS_SKIS;
+    mass = QUOTE(MASS_SKIS);
   };
   class HH60Flares_show {
     displayName = "Show HH-60 Flares";
     source="user";
     animPeriod=1;
     initPhase=0;
-    mass = MASS_HH60FLARES;
+    mass = QUOTE(MASS_HH60FLARES);
   };
   class HH60GRadar_show {
     displayName = "Show HH-60 Weather Radar";
@@ -255,21 +255,21 @@ class AnimationSources: AnimationSources {
     source="user";
     animPeriod=1;
     initPhase=0;
-    mass = MASS_MH60M_MISC;
+    mass = QUOTE(MASS_MH60M_MISC);
   };
   class Fuelprobe_show {
     displayName = "Show Fuel Probe";
     source="user";
     animPeriod=1;
     initPhase=0;
-    mass = MASS_PROBE;
+    mass = QUOTE(MASS_PROBE);
   };
   class Cockpitdoors_Hide {
     displayName = "Hide Cockpit doors";
     source="user";
     animPeriod=1;
     initPhase=0;
-    mass = -MASS_COCKPITDOORS;
+    mass = QUOTE(-MASS_COCKPITDOORS);
   };
   class cabindoor_L {
     source="user";

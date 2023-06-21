@@ -4,9 +4,9 @@ class LeftWindow: CargoTurret { //Left Doorgun
   forceHideGunner = 0;
   enabledByAnimationSource = "";
   gunnerCompartments = "Compartment2";
-  gunnerAction=vehicle_turnout_2;
-  gunnerInAction=passenger_inside_1;
-  gunnerName="Left Window";
+  gunnerAction = "vehicle_turnout_2";
+  gunnerInAction = "passenger_inside_1";
+  gunnerName = "Left Window";
   gunnerType = "vtx_uh60_doorgunner";
   hideWeaponsGunner = 0;
   isPersonTurret = 2;

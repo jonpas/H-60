@@ -59,7 +59,7 @@ class CfgVehicles {
         source="user";
         animPeriod=1;
         initPhase=0;
-        mass = -MASS_CABINSEATS3;
+        mass = QUOTE(-MASS_CABINSEATS3);
         lockCargoAnimationPhase = 1;
         lockCargo[] = { 8, 9, 10 };
       };
@@ -68,7 +68,7 @@ class CfgVehicles {
         source="user";
         animPeriod=1;
         initPhase=0;
-        mass = -MASS_CABINSEATS4;
+        mass = QUOTE(-MASS_CABINSEATS4);
         lockCargoAnimationPhase = 1;
         lockCargo[] = { 4, 5, 6, 7 };
         forceAnimatePhase = 0;
@@ -82,7 +82,7 @@ class CfgVehicles {
         source="user";
         animPeriod=1;
         initPhase=0;
-        mass = -MASS_CABINSEATS4;
+        mass = QUOTE(-MASS_CABINSEATS4);
         lockCargoAnimationPhase = 1;
         lockCargo[] = { 0, 1, 2, 3 };
         forceAnimatePhase = 0;

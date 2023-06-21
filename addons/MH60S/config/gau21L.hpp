@@ -24,9 +24,9 @@ class GAU21_Left: MainTurret
     memoryPointGunnerOutOptics = "gunnerview_3";
     LODTurnedIn = 1;
     LODTurnedOut = 1;
-    gunnerAction=GAU21Gunner;
-    gunnerInAction=GAU21Gunner;
-    minElev=-80; maxElev=25; initElev=-50 ;
+    gunnerAction = "GAU21Gunner";
+    gunnerInAction = "GAU21Gunner";
+    minElev=-80; maxElev=25; initElev=-50;
     minTurn=25; maxTurn=150; initTurn=120;
     class TurnIn {
         limitsArrayTop[] = {{10, 142}, {10, -16}};
